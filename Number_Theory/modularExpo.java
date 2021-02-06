@@ -27,7 +27,7 @@ public class modularExpo {
         if (n % 2 == 0) 
         {  
             y = exponentMod(a*a, n / 2, mod);  
-            y = y % mod;  
+            y = y % mod; 
         }  
         // If B is odd n
         else 
@@ -37,5 +37,20 @@ public class modularExpo {
         }  
         
         return (int)((y + mod) % mod);  
-        }  
+    }
+
+    private static long pow(long a, long n, long mod) {
+        long res = 1;
+        a %= mod;
+        while(n > 0){
+          if(n % 2 !=0){
+            res = (res*a) % mod;
+          }
+    
+          n >>= 1;
+          a = (a*a) % mod;
+        }
+    
+        return res;
+      }
 }

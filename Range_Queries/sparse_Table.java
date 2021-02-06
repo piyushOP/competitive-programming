@@ -3,7 +3,7 @@ package Range_Queries;
 import java.io.*;
 
 
-public class range_min_query{
+public class sparse_Table{
    static int sparse[][] = new int[100000][100000];
    public static void main(String[] args) throws Exception{
       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

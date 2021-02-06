@@ -3,17 +3,23 @@ package contest;
 import java.io.*;
 import java.util.*;
 
-public class Main{
+
+public class Main {
+  
   public static void main(String[] args) throws Exception {
     try {
       FastReader in = new FastReader();
       PrintWriter out = new PrintWriter(System.out);
-      int t = in.nextInt();
-      while (t-->0) {
-        
-      }
+
+      
+      
+
+      out.println();
+
+
       out.close();
     } catch (Exception e) {
+      System.out.println(e);
       return;
     }
   }
@@ -74,6 +80,15 @@ public class Main{
       }
       return arr;
     }
+    
+    long[] longArray(int n) {
+      String[] str = strArray();
+      long[] arr = new long[n];
+      for (int i = 0; i < n; i++) {
+        arr[i] = Long.parseLong(str[i]);
+      }
+      return arr;
+    }
 
     int[][] two_d_Array(int n, int m){
       int arr[][] = new int[n][m];
@@ -103,6 +118,7 @@ public class Main{
     arr[a] = arr[b];
     arr[b] = temp;
   }
+
 
 
 }

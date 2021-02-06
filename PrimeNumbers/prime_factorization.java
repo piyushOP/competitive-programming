@@ -1,13 +1,11 @@
 package PrimeNumbers;
 
-import java.io.*;
 import java.util.*;
 
 
 public class prime_factorization {
    static int arr[] = new int[1000001];
    public static void main(String[] args) throws Exception{
-      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
       int maxN = 1000001;
       Arrays.fill(arr,-1);
