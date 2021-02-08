@@ -16,7 +16,7 @@ public class sqrt_decomposition {
       int len = (int)Math.ceil(Math.sqrt(arr.length)); //Math.ceil is because what if any array's length is not a perfect square to any number.
       int sqrt[] = sqrt(arr,len);
 
-      int queries = 5;
+      int queries = 1;
       while(queries-->0){ // Taking every query.
          int l = sc.nextInt();
          int r = sc.nextInt();
@@ -39,7 +39,16 @@ public class sqrt_decomposition {
       // 3. where r in is not the ending of the range. Max run - O(sqrt(n))
 
       // Total is 3*sqrt(n) which is equal to O(sqrt(n)) for every query.
-            
+
+// -------------------------------------------------------------------------------//
+      
+      int updateVal = -10; //update query for min value
+      int updateIdx = 7;
+
+      arr[updateIdx] = updateVal;
+      int idx = updateIdx/len;
+      sqrt[idx] = Math.max(sqrt[idx], updateVal);
+      
    }
 
    public static int[] sqrt(int arr[],int len){

@@ -10,11 +10,11 @@ public class Main {
     try {
       FastReader in = new FastReader();
       PrintWriter out = new PrintWriter(System.out);
+      
+        
+      
 
       
-      
-
-      out.println();
 
 
       out.close();
