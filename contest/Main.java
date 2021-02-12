@@ -10,14 +10,7 @@ public class Main {
     try {
       FastReader in = new FastReader();
       PrintWriter out = new PrintWriter(System.out);
-      
-        
-      
-
-      
-
-
-      out.close();
+  
     } catch (Exception e) {
       System.out.println(e);
       return;
