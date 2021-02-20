@@ -10,14 +10,17 @@ public class Main {
     try {
       FastReader in = new FastReader();
       PrintWriter out = new PrintWriter(System.out);
-  
+      
+
+      out.close();
     } catch (Exception e) {
       System.out.println(e);
       return;
     }
   }
 
-  
+ 
+
 
   static class FastReader {
     BufferedReader br;
@@ -103,15 +106,11 @@ public class Main {
       }
       return arr;
     }
+    private static void swap (int arr[], int a, int b){
+      int temp = arr[a];
+      arr[a] = arr[b];
+      arr[b] = temp;
+    }
   }
- 
-
-  private static void swap (int arr[], int a, int b){
-    int temp = arr[a];
-    arr[a] = arr[b];
-    arr[b] = temp;
-  }
-
-
 
 }

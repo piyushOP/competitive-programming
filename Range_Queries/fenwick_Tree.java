@@ -20,7 +20,7 @@ public class fenwick_Tree{
          arr[i] = Integer.parseInt(elements[i-1]);
       }
 
-      preProcessNlogN(arr);
+      // preProcessNlogN(arr);
       preProcessInOn(arr);
       int Q = Integer.parseInt(br.readLine());
       for(int i=0;i<Q;i++){

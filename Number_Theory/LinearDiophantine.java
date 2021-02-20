@@ -14,7 +14,7 @@ public class LinearDiophantine {
         int b  = Integer.parseInt(br.readLine());
         int c = Integer.parseInt(br.readLine());
         
-        System.out.println(c % gcd(a,b) == 0);
+        System.out.println(c%gcd(a,b) == 0);
     }
 
     private static int gcd(int a, int b) {

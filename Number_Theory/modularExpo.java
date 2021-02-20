@@ -39,18 +39,18 @@ public class modularExpo {
         return (int)((y + mod) % mod);  
     }
 
-    private static long pow(long a, long n, long mod) {
-        long res = 1;
-        a %= mod;
-        while(n > 0){
-          if(n % 2 !=0){
-            res = (res*a) % mod;
-          }
+    // private static long pow(long a, long n, long mod) {
+    //     long res = 1;
+    //     a %= mod;
+    //     while(n > 0){
+    //       if(n % 2 !=0){
+    //         res = (res*a) % mod;
+    //       }
     
-          n >>= 1;
-          a = (a*a) % mod;
-        }
+    //       n >>= 1;
+    //       a = (a*a) % mod;
+    //     }
     
-        return res;
-      }
+    //     return res;
+    //   }
 }
