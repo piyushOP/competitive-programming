@@ -20,6 +20,6 @@ public class prime_factorization {
          }
       }
 
-      System.out.println(arr[10]);
+      System.out.println(arr[1064]);
    }
 }

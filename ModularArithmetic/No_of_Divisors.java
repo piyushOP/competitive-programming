@@ -41,7 +41,7 @@ public class No_of_Divisors {
         for(int i=2;i<=n;i++){
             if(prime[i]==true){
 
-     // calculate number of divisor with formula total div = (p1+1) * (p2+1) *.....* (pn+1) 
+                // calculate number of divisor with formula total div = (p1+1) * (p2+1) *.....* (pn+1) 
                 int count = 0;
                 if(n%i==0){
                     while(n%i==0){
