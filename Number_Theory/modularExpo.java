@@ -26,7 +26,7 @@ public class modularExpo {
         long y;  
         if (n % 2 == 0) 
         {  
-            y = exponentMod(a*a, n / 2, mod);  
+            y = exponentMod(a*a, n / 2, mod);
             y = y % mod; 
         }  
         // If B is odd n

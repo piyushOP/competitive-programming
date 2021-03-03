@@ -8,7 +8,7 @@ import java.util.*;
     put a = b & b = a%b - int equation.
     Here, a%b = a - (a/b) * b;
     x = y;
-    y = x - (a/b) * y;   
+    y = x - (a/b) * y; 
 
     base case is always x = 1 & y = 0.
 */
