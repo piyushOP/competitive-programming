@@ -44,6 +44,8 @@ public class Chinese_remainder_theorem {
                 return x;
             }
             x++;
+
+            if(x > 1e9) return -1;
         }
     }
 }
