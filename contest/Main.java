@@ -5,15 +5,15 @@ import java.util.*;
 
 
 
+
 public class Main {
   // static int mod = 1000000007;
-  
+ 
   public static void main(String[] args) throws Exception {
     try {
       FastReader in = new FastReader();
       PrintWriter out = new PrintWriter(System.out);
-    
-    
+      
       out.close();
     } catch (Exception e) {
       System.out.println(e);
@@ -21,13 +21,9 @@ public class Main {
     }
   }
 
+  
 
-
-
-
-
-
-  static class FastReader {
+  public static class FastReader {
     BufferedReader br;
     StringTokenizer st;
 
@@ -46,7 +42,7 @@ public class Main {
       return st.nextToken();
     }
 
-    int nextInt() {
+    public int nextInt() {
       return Integer.parseInt(next());
     }
 
