@@ -22,7 +22,7 @@ public class Manacher {
             lps[i]++;
          }
 
-         if(i > r){
+         if(i + lps[i] > r){
             c=i;
             r=lps[i] + i;
          }
